@@ -2,6 +2,17 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 
 /*
+Eng
+Java Object: Album
+Variables: name, artist, songList Object as a innerClass
+Simple Constructor with all variables
+Override toString function to return name + duration
+Methods:
+add Song: add song to this Album
+addToPlaylist: add selected song from album to playlist
+getAlbumSongs: Return songlist
+
+Português
 Objeto Album
 Contem Variaveis: name, artist e um objeto SongList implementado como innerclass
 Contem Construtor com variaves name e artist
