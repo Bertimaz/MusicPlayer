@@ -1,3 +1,13 @@
+/* 
+Song Object to be added to Albums.
+It has two variables: title, duration
+It has a simples constructor with all variables
+It has a getTitle
+Override toString to return title+duration as String
+
+*/
+
+
 //Objeto Song a ser utilizado por albums.
 //Contem duas variaves: title e duration
 //Contem um construtor com as variaveis title e duration
