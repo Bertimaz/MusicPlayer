@@ -3,13 +3,13 @@ import java.util.*;
 public class Main {
 
 
-    //Código cria uma lista com 2 albuns, cria uma playlist com musicas selecionadas destes albuns, e simula um tocador com a playlist criada
+    //Main Code creates two Albums (StormBringer and For Those About to Rock) and some music to a playlist to play it
 
     private static ArrayList<Album> albums = new ArrayList<Album>();
 
     public static void main(String[] args) {
 
-    //Cria album Stormbringer
+    //Creates Album StormBringer
 
         Album album = new Album("Stormbringer", "Deep Purple");
         album.addSong("Stormbringer", 4.6);
@@ -23,7 +23,7 @@ public class Main {
         album.addSong("Soldier of fortune", 3.13);
         albums.add(album);
 
-        //Cria Album For Those About To Rock
+        //Create album For Those About To Rock
 
         album = new Album("For those about to rock", "AC/DC");
         album.addSong("For those about to rock", 5.44);
@@ -37,7 +37,7 @@ public class Main {
         album.addSong("Night of the long knives", 5.12);
         albums.add(album);
 
-       //Imprime os Albuns Criados
+       //Print the created Albums
 
         int a = 1;
         for (Album currentAlbum : albums) {
@@ -50,7 +50,7 @@ public class Main {
         }
 
 
-        //Cria Playlist
+        //CCreate Playlist
 
         LinkedList<Song> playList = new LinkedList<Song>();
         albums.get(0).addToPlayList("You can't do it right", playList);
@@ -64,7 +64,7 @@ public class Main {
 
 
 
-        //imprime a playlist
+        //Print Playlist
 
         System.out.println("\nPlaylist 1 \n");
         for (int index = 0; index < playList.size(); index++) {
@@ -73,12 +73,24 @@ public class Main {
         System.out.println("\n");
 
 
-        //toca a playlist
+        //Play Playlist Created
         play(playList);
 
     }
 
     private static void play(LinkedList<Song> playList) {
+        /* Play Function ables the user to navigate through the playlist
+        "Available Options:  
+               0: Quit
+               1: Play Next Song
+               2: Replay Current Song
+               3: Play Last Song
+               4: Delete Current Song
+               5: Print Songs in the Playlist
+               6: Print Available Options
+    
+        
+        */
         Scanner scan = new Scanner(System.in);
         boolean quit = false;
         boolean forward = true;
